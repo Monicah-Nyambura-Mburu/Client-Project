@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    background-size: cover;
+    background-position; center;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  .menu-bar{
+    background: lightblue;
+    text-align: center;
+  }
+  .menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+  }
+  .menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+  }
+  .menu-bar ul li a{
+    text-decoration: none;
+    color: #000;
+  }
+  .active, .menu-bar ul li:hover{
+    /* background: #2bab0b; */
+    border-radius: 3px;
+  }
+  .sub-menu-1{
+    display: none;
+    z-index: 2;
+  }
+  .menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    background: #cf2e2e;
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    /* border-bottom: 1px dotted #fff; */
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li a{
+    color: #fff;
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: black;
+  }
+  .marine{
+    object-fit: cover;
+    margin-right: 60px;
+    width: inherit;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* container */
+  body {
+    background:#FFEA53;
+    background:url('../Images/Black_Mens_Health_Checkup_original_33114.jpg');
+    background-size:cover;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .pop-up-button {
+    background:none;
+    width:150px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#FFEA53;
+    margin:200px auto;
+    border-radius:5px;
+    border:1px solid #FFEA53;
+    cursor:pointer;
+      font-weight:bold;
+  }
+  .pop-up-button:hover{
+    background:#FFEA53;
+      /* color:#121212; */
+  }
+  .pop-up {
+    height:auto;
+    width:60%;
+    margin:10vh auto;
+    background:#fff;
+    position:relative;
+    z-index:1;
+    border-radius:5px;
+    /* box-shadow:0 0 20px #000; */
+  }
+  .pop-up-container{
+    height:100vh;
+    width:100%;
+    /* background:#000; */
+    opacity:.5;
+    position:relative;
+    z-index:-1;
+    margin-top:-500px;
+  }
+  
+  .pop-up-text {
+    box-sizing:border-box;
+    padding:59px;  
+  }
+  .pop-up-text h1{
+    font-size:2em;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#212121;
+    margin-left: 150px;
+    text-transform: uppercase;
+  }
+  .pop-up-text p{
+    font-size:1em;
+    margin-bottom:1em;
+  }
+  .pop-up-text a {
+    color:#FF3D3D;
+    margin-bottom:10px;
+  }
+  /**
+     * Reset button styles
+     * It takes some work to achieve a “blank slate” look.
+     */
+.button1 {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/**
+     * Button component
+     */
+.button1 {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  background-color: blue;
+}
+
+/* old-school "down" effect on clic + color tweak */
+.button1:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+/* inverse colors on hover */
+.button1:hover {
+  color: #9050aa;
+  border-color: currentColor;
+  background-color: white;
+}
+
+/* Firefox: remove the inner border shown on focus */
+.button1::-moz-focus-inner {
+  border: none;
+}
+.button1:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+    0 0 0 1.5px rgba(255, 105, 180, 0.5);
+}
+.js-focus-visible .button1:focus:not(.focus-visible) {
+  box-shadow: none;
+}
+     .button2 {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    .button2 {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      margin: 2px 0;
+      border: solid 1px transparent;
+      border-radius: 50px;
+      padding: 0.5em 1em;
+      color: #ffffff;
+      background-color: blue;
+    }
+    
+    .button2:active {
+      transform: translateY(1px);
+      filter: saturate(150%);
+    }
+    
+    .button2:hover {
+      color: #9050aa;
+      border-color: currentColor;
+      background-color: white;
+    }
+    .button2::-moz-focus-inner {
+      border: none;
+    }
+    
+    .button2:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+        0 0 0 1.5px rgba(255, 105, 180, 0.5);
+    }
+    
+    /* hide focus style if not from keyboard navigation */
+    .js-focus-visible .button2:focus:not(.focus-visible) {
+      box-shadow: none;
+    }
+    .button li{
+      text-decoration: none;
+      list-style: none;
+    }
+    .button2{
+      margin-left: 450px;
+      margin-top: 40px;
+    }
+    .footer{
+      height: 300px;
+      background-color: blue;
+      margin-top: 7rem;
+  } 
+  .last{
+    margin-left: 450px;
+  }
+  .i{
+    margin-top: -140px;
+    margin-left: 50px;
+    color: #fff;
+  }
+    

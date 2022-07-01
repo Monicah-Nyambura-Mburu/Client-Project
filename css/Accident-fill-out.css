@@ -1,0 +1,115 @@
+$main-color: #A0A6FD;
+$error-color: #FF6663;
+
+*, 
+*:after, 
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   background-attachment: fixed;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   font-family: 'Lato', sans-serif;
+   letter-spacing: 0.3px;
+}
+
+input {
+   appearance: none;
+   background: none;
+   border: 0 none;
+   outline: 0;
+}
+
+.container {
+   max-width: 400px;
+   margin: 20px auto;
+   padding: 35px;
+   background: white;
+   border-radius: 5px;
+}
+
+.heading {
+   margin: 30px 0 80px;
+   text-align: center;
+   font-size: 2em;
+}
+
+.form__group {
+   position: relative;
+   border-bottom: 1px solid #eee;
+   margin-bottom: 40px;
+   
+   &.is-error {
+      border-bottom-color: $error-color;
+   }
+}
+
+.form__input {
+   display: block;
+   position: relative;
+   width: 100%;
+   font-size: 1em;
+   line-height: 2.5em;
+   
+   // Detect if an input has value in it with JS setValue function
+   &:focus,
+   &:not([value=""]) {
+      + .form__label {
+         transform: translateY(-25px);
+         color: $main-color;
+         font-size: 0.75em;
+      }
+   }
+}
+
+.form__label {
+   position: absolute;
+   top: 10px;
+   color: $main-color;
+   font-size: inherit;
+   transform: translateY(0);
+   transition: all 0.3s;
+   cursor: text;
+}
+
+.form__label--select {
+   transform: translateY(-25px);
+}
+
+.form__error {
+   display: none;
+   margin-top: 60px;
+   padding: 10px;
+   border: 1px dashed $error-color;
+   color: $error-color;
+   font-size: 0.75em;
+}
+
+.form__submit-btn {
+   display: block;
+   width: 40%;
+   margin: 60px auto 0;
+   padding: 15px;
+   border: 1px solid $main-color;
+   border-radius: 3px;
+   outline: none;
+   cursor: pointer;
+   background: white;
+   color: darken($main-color, 10%);
+   font-size: 1em;
+   font-weight: 700;
+   transition: color 0.3s, background 0.3s;
+   
+   &:hover {
+      background: darken($main-color, 10%);
+      color: white;
+   }
+}

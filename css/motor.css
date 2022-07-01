@@ -1,0 +1,216 @@
+body {
+    background:#FFEA53;
+    background:url('../Images/motor-insurance.jpg');
+    background-size:cover;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  .pop-up-button {
+    background:none;
+    width:150px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#FFEA53;
+    margin:200px auto;
+    border-radius:5px;
+    border:1px solid #FFEA53;
+    cursor:pointer;
+      font-weight:bold;
+  }
+  .pop-up-button:hover{
+    background:#FFEA53;
+      /* color:#121212; */
+  }
+  .pop-up {
+    height:auto;
+    width:60%;
+    margin:10vh auto;
+    background:#fff;
+    position:relative;
+    z-index:1;
+    border-radius:5px;
+    box-shadow:0 0 20px #000;
+  }
+  .pop-up-container{
+    height:100vh;
+    width:100%;
+    /* background:#000; */
+    opacity:.5;
+    position:relative;
+    z-index:-1;
+    margin-top:-500px;
+  }
+  
+  .pop-up-text {
+    box-sizing:border-box;
+    padding:68.5px;  
+  }
+  .pop-up-text h1{
+    font-size:2em;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#212121;
+    margin-left: 150px;
+    text-transform: uppercase;
+  }
+  .pop-up-text p{
+    font-size:1em;
+    margin-bottom:1em;
+  }
+  .pop-up-text a {
+    color:#FF3D3D;
+    margin-bottom:10px;
+  }
+  .button1 {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* show a hand cursor on hover; some argue that we
+        should keep the default arrow cursor for buttons */
+    cursor: pointer;
+  }
+  
+  /**
+       * Button component
+       */
+  .button1 {
+    /* default for <button>, but needed for <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+  
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+  
+    /* button size comes from text + padding, avoid height */
+    padding: 0.5em 1em;
+  
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+    background-color: blue;
+  }
+  
+  /* old-school "down" effect on clic + color tweak */
+  .button1:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+  
+  /* inverse colors on hover */
+  .button1:hover {
+    color: #9050aa;
+    border-color: currentColor;
+    background-color: white;
+  }
+  
+  /* Firefox: remove the inner border shown on focus */
+  .button1::-moz-focus-inner {
+    border: none;
+  }
+  
+  /* make sure we have a visible focus ring */
+  .button1:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+      0 0 0 1.5px rgba(255, 105, 180, 0.5);
+  }
+  
+  /* hide focus style if not from keyboard navigation */
+  .js-focus-visible .button1:focus:not(.focus-visible) {
+    box-shadow: none;
+  }
+  /**
+       * Reset button styles
+       * It takes some work to achieve a “blank slate” look.
+       */
+       button2 {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        /* show a hand cursor on hover; some argue that we
+            should keep the default arrow cursor for buttons */
+        cursor: pointer;
+      }
+      
+      /**
+           * Button component
+           */
+      .button2 {
+        /* default for <button>, but needed for <a> */
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+      
+        /* create a small space when buttons wrap on 2 lines */
+        margin: 2px 0;
+      
+        /* invisible border (will be colored on hover/focus) */
+        border: solid 1px transparent;
+        border-radius: 8px;
+      
+        /* button size comes from text + padding, avoid height */
+        padding: 0.5em 1em;
+      
+        /* make sure colors have enough contrast! */
+        color: #ffffff;
+        background-color: blue;
+      }
+      
+      /* old-school "down" effect on clic + color tweak */
+      .button2:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+      }
+      
+      /* inverse colors on hover */
+      .button2:hover {
+        color: #9050aa;
+        border-color: currentColor;
+        background-color: white;
+      }
+      
+      /* Firefox: remove the inner border shown on focus */
+      .button2::-moz-focus-inner {
+        border: none;
+      }
+      
+      /* make sure we have a visible focus ring */
+      .button2:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+          0 0 0 1.5px rgba(255, 105, 180, 0.5);
+      }
+      
+      /* hide focus style if not from keyboard navigation */
+      .js-focus-visible .button2:focus:not(.focus-visible) {
+        box-shadow: none;
+      }
+      .button li{
+        text-decoration: none;
+        list-style: none;
+      }
+      .button2{
+        margin-left: 450px;
+        top: 20px;
+      }
+      .footer{
+        height: 300px;
+        background-color: blue;
+        margin-top: 7rem;
+    } 
+    .last{
+      margin-left: 450px;
+    }
+    .i{
+      margin-top: -140px;
+      margin-left: 50px;
+      color: #fff;
+    }
